@@ -35,6 +35,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
 }
 
 .visually-hidden {
@@ -79,34 +80,24 @@ body {
   background-color: rgba(255, 255, 255, 0);
 }
 
-.page-header {
-  color: #000000;
-  background-color: #ffffff;
-}
-
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  background-color: #ffffff;
   text-decoration: none;
-  text-transform: capitalize;
   color: #000000;
 }
 
 .intro {
   background-image: url("../images/index/background/background-welcome-to-sedona.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: #718eab;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 51px 51px 82px 51px;
-}
-
-.main-index {
-  color: #000000;
-  background-color: #ffffff;
 }
 
 .advantages-main-title,
@@ -147,9 +138,9 @@ body {
 
 .newsletter-index {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #486c84;
   background-image: url("../images/index/background/background-newsletter.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -161,29 +152,12 @@ body {
   color: #ffffff;
 }
 
-.page-newsletter-description-index {
-  color: #ffffff;
-}
-
-.page-footer {
-  color: #000000;
-  background-color: #ffffff;
-}
-
 .footer-contacts-address-phone {
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-}
-
-.main-inner {
-  color: #000000;
-  background-color: #ffffff;
-  background-image: url("../images/catalog/background/catalog-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
 }
 
 .inner-header-title {
@@ -207,7 +181,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  text-transform: capitalize;
   color: #ffffff;
 }
 
@@ -215,11 +188,6 @@ body {
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
-}
-
-.sort {
-  color: #000000;
-  background-color: #ffffff;
 }
 
 .number-of-accessible-hotels {
@@ -264,13 +232,13 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #333333;
+  background-color: #f2f2f2;
 }
 
 .pagination {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
   display: flex;
 }
 
@@ -297,12 +265,7 @@ body {
 
 .pagination-current {
   color: #000000;
-  background-color: #f2f2f2;;
-}
-
-.pagination-other {
-  color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .page-newsletter-title-catalog {
@@ -313,11 +276,6 @@ body {
   color: #000000;
 }
 
-.page-newsletter-description-catalog {
-  color: #000000;
-  background-color: #ffffff;
-}
-
 .field {
   font-family: inherit;
   font-size: 18px;
@@ -326,4 +284,11 @@ body {
 
 .hotel-card-link {
   text-decoration: none;
+}
+
+.filter {
+  background-image: url("../images/catalog/background/catalog-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #718eab;
 }
