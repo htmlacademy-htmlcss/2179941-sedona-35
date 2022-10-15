@@ -20,8 +20,15 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -88,6 +95,47 @@ body {
   color: #000000;
 }
 
+.page-header {
+  display: flex;
+  flex-direction: row;
+  height: 64px;
+}
+
+.page-header-logo {
+  margin: 0;
+  padding: 0;
+  margin-left: 70px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+  width: 339px;
+  list-style-type: none;
+}
+
+.navigation-item {
+  padding: 16px;
+}
+
+.user-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 268px;
+  margin-left: auto;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
 .intro {
   background-image: url("../images/index/background/background-welcome-to-sedona.jpg");
   background-size: cover;
@@ -100,6 +148,32 @@ body {
   padding: 51px 51px 82px 51px;
 }
 
+.advantages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.advantages-card {
+  display: flex;
+}
+
+.advantages-card-content {
+  width: 400px;
+  height: 384px;
+  background-color: #82b3d3;
+}
+
+.advantages-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.advantages-item {
+  width: 400px;
+  height: 384px;
+}
+
 .advantages-main-title,
 .main-text {
   font-weight: 700;
@@ -107,6 +181,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  text-align: center;
 }
 
 .advantages-card-title {
@@ -123,6 +198,20 @@ body {
   color: #ffffff;
 }
 
+.advantages-list-first-disposition li:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-list-first-disposition li:nth-child(even) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-list-second-disposition li:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-list-second-disposition li:nth-child(even) {
+  background-color: #ffffff;
+}
+
 .advantages-title {
   font-weight: 700;
   font-size: 24px;
@@ -136,7 +225,15 @@ body {
   line-height: 21px;
 }
 
+.looking-for-a-hotel {
+  display: flex;
+  flex-direction: column;
+}
+
 .newsletter-index {
+  display: flex;
+  flex-direction: column;
+  padding: 96px 258px 104px;
   color: #ffffff;
   background-color: #486c84;
   background-image: url("../images/index/background/background-newsletter.jpg");
@@ -152,12 +249,29 @@ body {
   color: #ffffff;
 }
 
+.page-footer {
+  display: flex;
+  padding: 40px 70px 30px;
+  justify-content: space-between;
+}
+
+
 .footer-contacts-address-phone {
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../images/catalog/background/catalog-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #718eab;
 }
 
 .inner-header-title {
@@ -190,6 +304,12 @@ body {
   color: #ffffff;
 }
 
+.sort {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1060px;
+}
+
 .number-of-accessible-hotels {
   font-weight: 700;
   font-size: 30px;
@@ -201,6 +321,15 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1060px;
+  list-style-type: none;
+  padding: 0;
 }
 
 .hotel-card-title {
@@ -237,9 +366,9 @@ body {
 
 .pagination {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
   display: flex;
+  max-width: 1060px;
 }
 
 .pagination-item {
@@ -268,6 +397,12 @@ body {
   background-color: #f2f2f2;
 }
 
+.newsletter-catalog {
+  display: flex;
+  flex-direction: column;
+  padding: 96px 258px 104px;
+}
+
 .page-newsletter-title-catalog {
   font-weight: 700;
   font-size: 30px;
@@ -284,11 +419,4 @@ body {
 
 .hotel-card-link {
   text-decoration: none;
-}
-
-.filter {
-  background-image: url("../images/catalog/background/catalog-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #718eab;
 }
