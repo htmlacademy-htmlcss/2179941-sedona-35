@@ -226,6 +226,7 @@ body {
 .advantages-list-first-disposition li:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12);
 }
+
 .advantages-list-first-disposition li:nth-child(even) {
   background-color: rgba(131, 179, 211, 0.2);
 }
@@ -233,6 +234,7 @@ body {
 .advantages-list-second-disposition li:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12);
 }
+
 .advantages-list-second-disposition li:nth-child(even) {
   background-color: #ffffff;
 }
@@ -252,6 +254,16 @@ body {
   line-height: 21px;
   margin: 0 auto 121px auto;
   max-width: 240px;
+}
+
+.advantages-title-card-with-image {
+  margin: 0 auto 0 auto;
+  max-width: 230px;
+}
+
+.advantages-description-card-with-image {
+  margin: 30px auto 81px auto;
+  max-width: 230px;
 }
 
 .looking-for-a-hotel {
