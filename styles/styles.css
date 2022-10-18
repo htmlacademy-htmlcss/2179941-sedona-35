@@ -167,7 +167,7 @@ body {
   width: 400px;
   background-color: #82b3d3;
   text-align: center;
-  padding-top: 92px;
+  padding: 92px 85px 111px 85px;
 }
 
 .advantages-list {
@@ -181,7 +181,7 @@ body {
 .advantages-item {
   width: 400px;
   text-align: center;
-  padding-top: 103px;
+  padding: 103px 85px 121px 85px;
 }
 
 .advantages-main-title,
@@ -197,11 +197,13 @@ body {
 .advantages-main-title {
   margin: 0 auto 25px auto;
   max-width: 625px;
+  text-align: center;
 }
 
 .advantages-main-description {
   margin: 0 auto 90px auto;
   max-width: 670px;
+  text-align: center;
 }
 
 .advantages-card-title {
@@ -211,16 +213,14 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
-  margin: 0 auto 62px;
-  max-width: 180px;
+  margin: 0 0 62px 0 ;
 }
 
 .advantages-card-description {
   font-size: 18px;
   line-height: 21px;
   color: #ffffff;
-  margin: 0 auto 111px auto;
-  max-width: 240px;
+  margin: 0;
 }
 
 .advantages-list-first-disposition li:nth-child(odd) {
@@ -245,43 +245,28 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
-  margin: 0 auto 62px auto;
-  max-width: 180px;
+  margin: 0 0 62px 0;
 }
 
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
-  margin: 0 auto 121px auto;
-  max-width: 240px;
-}
-
-.advantages-title-card-with-image {
-  margin: 0 auto 0 auto;
-  max-width: 230px;
-}
-
-.advantages-description-card-with-image {
-  margin: 30px auto 81px auto;
-  max-width: 230px;
+  margin: 0;
 }
 
 .looking-for-a-hotel {
   display: flex;
   flex-direction: column;
-  margin-top: 96px;
   text-align: center;
-  padding-bottom: 96px;
+  padding: 96px 270px 96px 270px;
 }
 
 .main-text {
-  margin: 0 auto 20px auto;
-  max-width: 305px;
+  margin: 0 0 20px 0;
 }
 
 .main-description-text {
-  margin: 0 auto 54px auto;
-  max-width: 600px;
+  margin: 0 0 54px 0;
 }
 
 .newsletter-index {
@@ -294,6 +279,7 @@ body {
   background-repeat: no-repeat;
   margin: 0 auto;
   text-align: center;
+  padding: 96px 258px 104px 258px;
 }
 
 .page-newsletter-title-index {
@@ -302,17 +288,15 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 96px auto 20px auto;
-  max-width: 410px;
+  margin: 0 0 20px 0;
 }
 
 .page-newsletter-description-index {
-  margin: 0 auto 54px auto;
-  max-width: 480px;
+  margin: 0 0 54px 0;
 }
 
 .newsletter-form {
-  margin: 0 auto 104px auto;
+  margin: 0;
   text-align: center;
 }
 
@@ -350,7 +334,7 @@ body {
   background-repeat: no-repeat;
   background-color: #718eab;
   margin: 0;
-  padding: 35px 70px 70px;
+  padding: 35px 70px 70px 70px;
 }
 
 .inner-header-title {
@@ -358,14 +342,14 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
-  margin: 0 auto 8px auto;
+  margin: 0 0 8px 0;
 }
 
 .breadcrumbs {
   display: flex;
   color: #ffffff;
   list-style-type: none;
-  margin: 0 auto 40px auto;
+  margin: 0 0 40px 0;
 }
 
 .breadcrumbs-link {
@@ -376,7 +360,7 @@ body {
 
 .catalog-filter {
   display: flex;
-  margin: 0 auto 70px auto;
+  margin: 0;
 }
 
 .catalog-filter-group {
@@ -402,8 +386,8 @@ body {
 
 .sort {
   display: flex;
-  margin: 50px auto 0 auto;
-  width: 1060px;
+  margin: 50px auto 40px auto;
+  max-width: 1060px;
   text-align: center;
 }
 
@@ -425,8 +409,8 @@ body {
 .hotel-list {
   display: flex;
   flex-wrap: wrap;
-  margin:  40px auto 0 auto;
-  width: 1060px;
+  margin:  40px auto 80px auto;
+  max-width: 1060px;
   list-style-type: none;
   padding: 0;
 }
@@ -465,9 +449,8 @@ body {
 
 .pagination {
   list-style: none;
-  margin: 80px auto 0 auto;
+  margin: 80px auto 60px auto;
   display: flex;
-  width: 1060px;
 }
 
 .pagination-item {
@@ -504,8 +487,9 @@ body {
 .newsletter-catalog {
   display: flex;
   flex-direction: column;
-  margin: 60px auto 0 auto;
   text-align: center;
+  margin: 0 auto;
+  padding: 96px 258px 104px 258px;
 }
 
 .page-newsletter-title-catalog {
@@ -514,13 +498,11 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  margin: 96px auto 0 auto;
-  max-width: 410px;
+  margin: 0 0 20px 0;
 }
 
 .page-newsletter-description-catalog {
-  margin: 20px auto 54px auto;
-  max-width: 480px;
+  margin: 0 0 54px 0;
 }
 
 .field {
