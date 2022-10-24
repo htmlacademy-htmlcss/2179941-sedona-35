@@ -41,8 +41,15 @@ body {
 .page-wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .visually-hidden {
@@ -69,6 +76,7 @@ body {
   text-transform: uppercase;
   border: none;
   border-radius: 4px;
+  height: 36px;
 }
 
 .button-brown {
@@ -103,14 +111,12 @@ body {
 
 .page-header {
   display: flex;
-  flex-direction: row;
-  min-height: 64px;
+  padding: 0 70px;
 }
 
 .page-header-logo {
-  margin: 0;
+  margin: 0 30px 0 0;
   padding: 0;
-  margin-left: 70px;
 }
 
 .navigation {
@@ -119,27 +125,43 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-left: 30px;
   width: 339px;
   list-style-type: none;
 }
 
 .navigation-item {
-  padding: 16px;
+  padding: 20px 16px;
+  display: block;
 }
 
 .user-navigation {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 268px;
   margin-left: auto;
+  justify-content: flex-end;
 }
 
-.main-container {
-  flex-grow: 1;
+.user-navigation-search {
+  min-width: 44px;
+  min-height: 64px;
+  margin: 0;
+}
+
+.user-navigation-like {
+  min-width: 44px;
+  min-height: 64px;
+  margin: 0 20px 0 0;
+}
+
+.user-navigation-wish {
+  margin: 14px 0;
+  width: 160px;
 }
 
 .intro {
@@ -312,17 +334,38 @@ body {
 
 .page-footer {
   display: flex;
-  padding: 40px 70px 30px;
+  padding: 40px 70px 30px 70px;
   justify-content: space-between;
 }
 
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 142px;
+  list-style-type: none;
+  align-items: center;
+}
+
+.footer-social-item {
+  height: 40px;
+  padding: 0 10px;
+}
 
 .footer-contacts-address-phone {
+  font-family: "PT Sans", sans-serif;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  min-width: 720px;
+  text-align: center;
+}
+
+.footer-logo {
+  align-items: center;
 }
 
 .filter {
@@ -350,6 +393,7 @@ body {
   color: #ffffff;
   list-style-type: none;
   margin: 0 0 40px 0;
+  padding: 0;
 }
 
 .breadcrumbs-link {
@@ -376,6 +420,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
+  margin: 0 0 32px 0;
 }
 
 .catalog-filter-item {
@@ -389,6 +434,12 @@ body {
   margin: 50px auto 40px auto;
   max-width: 1060px;
   text-align: center;
+  padding: 0;
+}
+
+.sort-button-view {
+  width: 48px;
+  height: 48px;
 }
 
 .number-of-accessible-hotels {
@@ -409,10 +460,20 @@ body {
 .hotel-list {
   display: flex;
   flex-wrap: wrap;
-  margin:  40px auto 80px auto;
+  margin:  0 auto 80px auto;
   max-width: 1060px;
   list-style-type: none;
   padding: 0;
+}
+
+.hotel-card {
+  margin: 0 20px 20px 0;
+  width: 340px;
+  height: 438px;
+}
+
+.hotel-card:nth-child(3n) {
+  margin-right: 0;
 }
 
 .hotel-card-title {
@@ -448,9 +509,9 @@ body {
 }
 
 .pagination {
-  list-style: none;
-  margin: 80px auto 60px auto;
   display: flex;
+  margin: 80px auto 60px auto;
+  list-style-type: none;
 }
 
 .pagination-item {
