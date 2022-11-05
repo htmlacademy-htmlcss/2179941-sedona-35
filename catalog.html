@@ -32,7 +32,7 @@
           <a class="user-navigation-like" href="#">
             <span class="visually-hidden">Поставить лайк.</span>
           </a>
-          <a class="user-navigation-wish button button-brown" href="#">Хочу сюда!</a>
+          <a class="user-navigation-wish button" href="#">Хочу сюда!</a>
         </div>
       </header>
       <main class="main-inner main-container">
@@ -118,7 +118,7 @@
                   </div>
                 </fieldset>
                 <fieldset class="catalog-filter-group catalog-filter-group-buttons">
-                  <button class="button button-blue button-apply" type="submit">Применить</button>
+                  <button class="button button-apply" type="submit">Применить</button>
                   <button class="button button-transparent" type="reset">Сбросить</button>
                 </fieldset>
             </form>
@@ -131,15 +131,23 @@
                 <option value="expensive">Сначала дорогие</option>
                 <option value="popular">Сначала популярные</option>
               </select>
-              <a href="#" class="button sort-button-view button-selected">
-                <span class="visually-hidden">Показать карточки.</span>
-              </a>
-              <a class="button sort-button-view" href="#">
-                <span class="visually-hidden">Показать слайд.</span>
-              </a>
-              <a class="button sort-button-view" href="#">
-                <span class="visually-hidden">Показать список.</span>
-              </a>
+              <ul class="sort-list">
+                <li class="sort-item">
+                  <a href="#" class="button sort-button button-selected">
+                    <span class="visually-hidden">Показать карточки.</span>
+                  </a>
+                </li>
+                <li class="sort-item">
+                  <a class="button sort-button" href="#">
+                    <span class="visually-hidden">Показать слайд.</span>
+                  </a>
+                </li>
+                <li class="sort-item">
+                  <a class="button sort-button" href="#">
+                    <span class="visually-hidden">Показать список.</span>
+                  </a>
+                </li>
+              </ul>
             </div>
             <ul class="hotel-list">
               <li class="hotel-card">
@@ -150,8 +158,8 @@
                 <div class="hotel-card-description">
                   <span class="hotel-card-type">Гостиница</span>
                   <span class="hotel-card-price">От 4000 ₽</span>
-                  <a class="product-card-button-more button button-brown" href="#">Подробнее</a>
-                  <a class="product-card-button-to-favourites button button-blue" href="#">В избранное</a>
+                  <a class="button button-more" href="#">Подробнее</a>
+                  <a class=" button button-to-favourites" href="#">В избранное</a>
                   <div class="hotels-stars hotels-stars-4"></div>
                   <span class="hotels-rating">Рейтинг: 8,5</span>
                 </div>
@@ -164,8 +172,8 @@
                 <div class="hotel-card-description">
                   <span class="hotel-card-type">Гостиница</span>
                   <span class="hotel-card-price">От 5000 ₽</span>
-                  <a class="product-card-button button button-brown" href="#">Подробнее</a>
-                  <a class="product-card-button button button-green" href="#">В избранном</a>
+                  <a class="button button-more" href="#">Подробнее</a>
+                  <a class="button button-in-favourites" href="#">В избранном</a>
                   <div class="hotels-stars hotels-stars-4"></div>
                   <span class="hotels-rating">Рейтинг: 9,2</span>
                 </div>
@@ -178,8 +186,8 @@
                 <div class="hotel-card-description">
                   <span class="hotel-card-type">Гостиница</span>
                   <span class="hotel-card-price">От 2500 ₽</span>
-                  <a class="product-card-button button button-brown" href="#">Подробнее</a>
-                  <a class="product-card-button button button-blue" href="#">В избранное</a>
+                  <a class="button button-more" href="#">Подробнее</a>
+                  <a class=" button button-to-favourites" href="#">В избранное</a>
                   <div class="hotels-stars hotels-stars-3"></div>
                   <span class="hotels-rating">Рейтинг: 6,9</span>
                 </div>
@@ -192,8 +200,8 @@
                 <div class="hotel-card-description">
                   <span class="hotel-card-type">Гостиница</span>
                   <span class="hotel-card-price">От 1500 ₽</span>
-                  <a class="product-card-button button button-brown" href="#">Подробнее</a>
-                  <a class="product-card-button button button-blue" href="#">В избранное</a>
+                  <a class="button button-more" href="#">Подробнее</a>
+                  <a class=" button button-to-favourites" href="#">В избранное</a>
                   <div class="hotels-stars hotels-stars-2"></div>
                   <span class="hotels-rating">Рейтинг: 5,0</span>
                 </div>
@@ -229,7 +237,7 @@
               <span class="visually-hidden">Email.</span>
               <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
             </label>
-            <button class="button button-blue button-subscribe" type="submit">Подписаться</button>
+            <button class="button button-subscribe" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
