@@ -544,7 +544,6 @@ body {
   position: relative;
 }
 
-
 .footer-social-item svg:hover {
   fill: #68a2ca;
 }
@@ -557,9 +556,19 @@ body {
   fill: rgba(104, 162, 202, 0.3);
 }
 
-.footer-social-item:focus {
+.footer-button-vk:focus {
   outline: 2px solid #68a2ca;
-  outline-offset: 2px;
+  outline-offset: -2px;
+}
+
+.footer-button-telegram:focus {
+  outline: 2px solid #68a2ca;
+  outline-offset: -2px;
+}
+
+.footer-button-youtube:focus {
+  outline: 2px solid #68a2ca;
+  outline-offset: -2px;
 }
 
 .footer-button-icon {
